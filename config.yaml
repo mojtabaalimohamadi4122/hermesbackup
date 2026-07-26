@@ -8,3 +8,14 @@ compression:
 onboarding:
   seen:
     profile_build_offered: true
+model:
+  aliases:
+    gemini: openai-api/gemini/gemini-3.1-pro-preview
+    deepseek: openai-api/cf/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b
+    kimi: openai-api/cf/@cf/moonshotai/kimi-k2.6
+    qwen: openai-api/cf/@cf/qwen/qwen2.5-coder-32b-instruct
+    llama: openai-api/cf/@cf/meta/llama-3.3-70b-instruct-fp8-fast
+  default: openai-api/gemini/gemini-3.1-pro-preview
+delegation:
+  model: gemini/gemini-3-flash-preview
+  provider: openai-api

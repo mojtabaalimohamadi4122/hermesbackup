@@ -29,6 +29,16 @@ After a memory call targeting a non-Latin-script user, check the response for su
 
 Persian, Arabic, and Hebrew responses render correctly on Telegram. Mixed code blocks or inline code with Latin text inside RTL paragraphs is fine.
 
+## Persian/Farsi Specific Patterns
+
+- User may say "فارسی فقط" or "فقط فارسی" to request Persian-only responses
+- Save this preference immediately via memory (in English to avoid Unicode issues)
+- Persian users often mix English technical terms naturally — don't force full translation
+  of technical vocabulary (e.g., "cron job", "SSH", "API" are commonly used as-is)
+- When user asks about models/providers, explain in Persian but keep model names in English
+- Common Persian casual openings: "سلام", "عزیزم", "جان" — respond warmly and casually
+- Use emoji frequently in Persian conversations — it fits the casual/friendly tone
+
 ## First-Time User Onboarding (Non-English)
 
 Follow the same system-prompt onboarding flow but in the user language. Keep it light and conversational.

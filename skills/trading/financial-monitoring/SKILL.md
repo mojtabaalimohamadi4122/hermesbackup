@@ -78,7 +78,37 @@ if alerts:
 print(f"Price: {price}")  # This gets sent every run!
 ```
 
-## 4. Best Practices
+## 4. Spreadsheet Generation (Trading Journals, Reports)
+
+When creating Excel files (trading journals, performance reports), use `openpyxl`:
+
+```bash
+pip install openpyxl  # idempotent
+```
+
+### Fallback: execute_code Import Failures
+If `execute_code` can't import openpyxl (sandbox environment issue), write the
+entire script to a `.py` file and run via `terminal()`:
+
+```python
+from hermes_tools import write_file, terminal
+write_file("/data/workspace/create_journal.py", "import openpyxl\n...")
+terminal("cd /data/workspace && python3 create_journal.py")
+```
+
+### RTL Excel for Persian/Arabic/Hebrew Users
+```python
+ws.sheet_view.rightToLeft = True  # RTL layout
+# Use Arial font for Persian — renders correctly
+# Headers in user's language, wider columns for non-Latin scripts
+```
+
+### Common Trading Journal Columns (Persian)
+تاریخ, ساعت, جفت ارز, نوع(SELL/BUY), حجم(Lot), نقطه ورود, حد ضرر(SL),
+حد سود(TP1,TP2), نقطه خروج, سود/ضرر($), درصد(%), اسپرد, کارمزد,
+نتیجه خالص($), R-Multiple, احساسات, یادداشت
+
+## 5. Best Practices
 - **Persistence**: Save alerts to a log file (`monitoring.log`).
 - **Notification**: Use `deliver='origin'` in cron jobs to get alerts directly in the chat.
 - **Security**: Never hardcode sensitive IPs or credentials in shared scripts.

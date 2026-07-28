@@ -9,3 +9,5 @@ Preferences: Persian-only. Casual/friendly. Frustrated by rate-limit error messa
 Infrastructure: Turkey-based VPN server (IP TBD, port 22 blocked). GitHub: mojtabaalimohamadi4122/hermesbackup.
 Backups: memories/skills/configs backed up every 12h via cron (ID 55f3a242af3b).
 Models: Uses memohermes primary. Gemini Kimi available via 9router but quota-limited. Delegation model now set back to memohermes.
+§
+Coffee: Has Western 8860 espresso machine (51mm portafilter), manual grinder, pressurized portafilter. Wants better crema. Learning espresso technique. Interested in non-pressurized portafilter upgrade.

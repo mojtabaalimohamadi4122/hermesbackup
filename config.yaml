@@ -25,6 +25,14 @@ onboarding:
     profile_build_offered: true
     busy_input_prompt: true
 _config_version: 33
+platforms:
+  telegram:
+    enabled: true
+    home_channel:
+      platform: telegram
+      chat_id: '792418415'
+      name: M.A.M
+      user_id: '792418415'
 
 # ── Security ──────────────────────────────────────────────────────────
 # Secret redaction is ON by default — strings that look like API keys,

@@ -1,8 +1,7 @@
 # Hermes Backup Manifest
 
-**Last Backup:** 2026-07-31 15:22
-**Host:** e41de560bdec
-**Backup Size:** 11M
+**Last Backup:** 2026-07-31 15:42
+**Host:** 1b76be9308dd
 
 ## Included:
 - memories/MEMORY.md + USER.md (Agent & user memory)

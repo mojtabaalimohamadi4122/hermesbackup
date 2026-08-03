@@ -11,3 +11,7 @@ Backups: memories/skills/configs backed up every 12h via cron (ID 55f3a242af3b).
 Models: Uses memohermes primary. Gemini Kimi available via 9router but quota-limited. Delegation model now set back to memohermes.
 §
 Coffee: Has Western 8860 espresso machine (51mm portafilter), manual grinder, pressurized portafilter. Wants better crema. Learning espresso technique. Interested in non-pressurized portafilter upgrade.
+§
+Uses WireGuard/VPN solutions (e.g., Hiddify) for internet access.
+§
+Recently interested in German phrases related to 'Liebeskummer' (heartbreak).

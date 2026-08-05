@@ -4,4 +4,4 @@ User requests all responses in Persian (Farsi) only.
 §
 User prefers German pronunciations via gTTS (Google TTS) because the default edge provider felt "too robotic". Always use gTTS for German audio.
 §
-Professional Background: Associate Degree (fogh-diplom) in Emergency Medical Services (EMS). Aiming for Nursing Ausbildung in Germany. Current German level: A2. Has university transcripts.
+Professional Background: Associate Degree in Emergency Medical Services (EMS). Aiming for Nursing Ausbildung in Germany. Current German level: A2. Has university transcripts. Lives near Sadeghiyeh (Tehran). Single.

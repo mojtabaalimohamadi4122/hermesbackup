@@ -166,6 +166,56 @@ Watch for these frequent mistakes from A2 learners:
 - **so ... wie** (as ... as): Er ist so groß **wie** ich.
 - **am ...sten** (the most): Das ist **am** schön**sten**.
 
+## "aussehen" + Adjektiv Pattern (Looking Like / Appearance)
+
+**aussehen** (to look / to appear) is a separable verb frequently used with adjectives to describe appearance. Always takes **Dativ** for the person.
+
+### Structure: Subject + sieht + Adjektiv + aus
+
+| Person | Example | Translation |
+|--------|---------|-------------|
+| ich | Ich sehe müde **aus**. | I look tired. |
+| du | Du siehst nett **aus**. | You look nice. |
+| er/sie | Sie sieht freundlich **aus**. | She/You look friendly. |
+| wir | Wir sehen gut **aus**. | We look good. |
+
+### Common adjective combos:
+- **gut aussehen** = to look good
+- **schlecht aussehen** = to look bad/ill
+- **müde aussehen** = to look tired
+- **freundlich aussehen** = to look friendly
+- **lecker aussehen** = to look delicious (for food)
+- **blass aussehen** = to look pale (medical!)
+
+## Preposition Nuances: "auf der Straße" vs "in der Straße"
+
+A subtle but important distinction for A2 learners:
+
+| Phrase | Meaning | Usage |
+|--------|---------|-------|
+| **auf der Straße** | ON the street (surface) | Physical location on asphalt/road surface |
+| **in der Straße** | IN the street (address/area) | Address, neighborhood, buildings in that street |
+
+### Examples:
+- *Die Kinder spielen **auf der Straße**.* (Kids play ON the street — on the road surface)
+- *Ich wohne **in der Goethestraße**.* (I live IN Goethe Street — at that address)
+
+### General rule:
+- **auf** + Dativ = on a surface (auf dem Tisch, auf der Straße)
+- **in** + Dativ = inside a location/area (in der Küche, in der Straße)
+
+## Translations for "Suitable" (Multiple German Equivalents)
+
+When user asks about "suitable" or similar English words, provide ALL common German equivalents with nuance differences:
+
+| German | Focus | Example |
+|--------|-------|---------|
+| **geeignet** | Right for a specific purpose/role | *Ist er für diesen Job geeignet?* |
+| **passend** | Fits/matches (size, style, timing) | *Das Kleid ist passend.* |
+| **angemessen** | Appropriate/proper (formal) | *Ein angemessenes Gehalt.* |
+
+Always present as a comparison table so the learner understands when to use which.
+
 ## Umlaut Pronunciation Guide
 
 | Letter | Sound | Example |

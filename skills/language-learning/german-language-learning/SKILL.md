@@ -233,6 +233,42 @@ Always present as a comparison table so the learner understands when to use whic
 | **ie** | "ee" | die = dee |
 | **eu/äu** | "oy" | heute = hoy-te |
 
+## Reflexive Verbs Deep-Dive (sich + verb)
+
+When user asks about a reflexive verb like `sich vorstellen`, provide:
+
+### Conjugation Table:
+| Person | Reflexive Pronoun | Example |
+|--------|------------------|---------|
+| ich | mich | Ich stelle **mich** vor. |
+| du | dich | Du stellst **dich** vor. |
+| er/sie/es | sich | Er stellt **sich** vor. |
+| wir | uns | Wir stellen **uns** vor. |
+| ihr | euch | Ihr stellt **euch** vor. |
+| sie/Sie | sich | Sie stellen **sich** vor. |
+
+### Key distinction:
+- **Reflexive with Akkusativ** (no preposition): *sich vorstellen* (introduce oneself)
+- **Reflexive with Dativ** (with preposition like "etwas"): *sich etwas vorstellen* (imagine something) — note the pronoun changes to **mir/dir**!
+
+## Verbs with "umher-" Prefix
+
+The prefix **umher-** means "around" and creates separable verbs:
+- **umhergehen** = to walk around, to stroll
+- **umherlaufen** = to run around
+- **umhersitzen** = to sit around
+
+These follow standard trennbar rules: *Ich gehe umher.* (not *Ich umhergehe.*)
+
+## Medical Context Vocabulary
+
+Since the user is a nurse, always include medical examples when available:
+- **Stelle** → *Die betroffene Stelle* (the affected area)
+- **Verteilen** → *Die Medikamente verteilen* (distribute medications)
+- **aufstehen** → *Können Sie aufstehen?* (Can you stand up?)
+- **Durchatmen** → *Lass uns durchatmen.* (Let's take a deep breath)
+- **freundlich aussehen** → *Der Patient sieht blass aus.* (The patient looks pale)
+
 ## References
 
 - `references/german-grammar-basics.md` — Quick reference for case system and verb conjugation

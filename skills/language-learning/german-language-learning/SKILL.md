@@ -109,10 +109,37 @@ When user submits a German sentence for review:
 This user:
 - Is learning German at **A2 level** (started recently)
 - Uses **AnkiDroid** for vocabulary flashcards
-- Is a **nurse** (medical context is relevant)
+- Has a **diploma in Emergency Medical Services** (not BSN nursing) — medical context is relevant
+- Planning to migrate to Germany via **Ausbildung in nursing** (Pflegeausbildung)
 - Prefers explanations in **Persian (Farsi) only**
 - Wants **audio pronunciation** for every word/phrase
 - Prefers gTTS audio over edge TTS (robotic-sounding)
+- Always wants **past tense for verbs** and **plural for nouns** in every word lookup
+
+## MANDATORY Response Format for Every German Word
+
+User explicitly requested these for EVERY word lookup:
+
+### For VERBS — ALWAYS include past tense:
+1. **Präsens** (present) — full conjugation table
+2. **Perfekt** (compound past) — full conjugation + Partizip II form
+3. **Präteritum** (simple past) — full conjugation
+4. Note whether verb uses **haben** or **sein** in Perfekt
+5. Note whether separable (trennbar) or inseparable (untrennbar)
+6. Note -ieren verbs that skip ge- prefix
+
+### For NOUNS — ALWAYS include plural form:
+1. **Singular** with article (der/die/das)
+2. **Plural** form with article
+3. Plural pattern if applicable (-er, -en, -e, Umlaut, etc.)
+4. Genitive form if useful
+
+### For ALL words — ALWAYS include:
+1. Word breakdown (etymology if helpful)
+2. Multiple meanings if applicable (table format)
+3. 3+ example sentences with Persian translation
+4. gTTS audio pronunciation
+5. AnkiDroid tip (medical context when possible)
 
 ## Verb Conjugation Deep-Dive Pattern
 
@@ -144,6 +171,57 @@ Watch for these frequent mistakes from A2 learners:
 | "gestudiert" | **studiert** | -ieren verbs: no ge- prefix in Partizip II |
 | "Der Frau" (wrong article) | **die Frau** | die = feminine; der = masculine |
 | "ich habe gelernt" (for university) | **ich habe studiert** | lernen = learn/school; studieren = university |
+| "Ergenzung" | **Ergänzung** | ä → ae if ä not available |
+| "Unterschift" | **Unterschrift** | remember final -t |
+| "Sache" (meaning object) | **Gegenstand** | Sache = thing/matter (abstract); Gegenstand = physical object |
+
+## Key Verb Distinctions
+
+### aufstehen vs. stehen
+| Verb | Partizip II | Meaning |
+|------|-------------|---------|
+| **aufstehen** | aufgestanden (sein!) | To get up / wake up |
+| **stehen** | gestanden (sein!) | To stand / be standing |
+
+Both use **sein** in Perfekt (not haben) because they describe change of state.
+- *Ich bin um 6 Uhr **aufgestanden**.* (I got up at 6)
+- *Ich bin lange **gestanden**.* (I stood for a long time)
+
+### kaufen vs. einkaufen
+| Verb | Meaning | Usage |
+|------|---------|-------|
+| **kaufen** | to buy (specific item) | *Ich habe ein Handy gekauft.* |
+| **einkaufen** | to go shopping | *Ich habe im Mall eingekauft.* |
+
+### tauchen vs. tauchen (spelling trap!)
+| Word | Spelling | Meaning | Pronunciation |
+|------|----------|---------|---------------|
+| **tauchen** | t-a-u-**ch**-en | to dive | tao-khen (خ) |
+| **tauschen** | t-a-u-**sch**-en | to exchange | tao-shen (ش) |
+
+### Passen + Dativ (always!)
+- *Das passt **dir**.* (correct) ✅
+- *Das passt **dich**.* (wrong!) ❌
+
+### auf der Straße vs. in der Straße
+| Phrase | Meaning |
+|--------|---------|
+| **auf der Straße** | ON the street (surface/asphalt) |
+| **in der Straße** | IN the street (address/area) |
+
+## Compound Noun Patterns
+
+German loves compound nouns. Key patterns for A2:
+
+| Pattern | Example | Breakdown |
+|---------|---------|-----------|
+| Liebling + Noun | **Lieblingsland** | favorite country |
+| Arbeit + Noun | **Arbeitsstelle** | workplace |
+| Vorstellung + Noun | **Vorstellungsgespräch** | job interview |
+| Einkauf + Noun | **Einkaufszentrum** | shopping center |
+| Nachtschicht | Nacht + Schicht | night shift |
+
+Rule: Compound nouns always get the gender of the LAST word and are always capitalized.
 
 ## Comparative & Superlative (Komparativ & Superlativ)
 

@@ -13,3 +13,7 @@ Language tutoring prefs: Use gTTS (not edge TTS - too robotic for German). Forma
 Backup restored from GitHub (2026-07-31). Script at ~/.hermes/scripts/hermes_backup.sh. Cron ID 55f3a242af3b runs every 12h, test passed.
 §
 User is learning German words/phrases daily. Prefers detailed grammar breakdowns with transliteration and gTTS audio. Currently studying A2 level. Key topics covered: reflexive verbs (sich vorstellen), dativ verbs (stehen, passen), separable vs inseparable verbs, aussehen, verteilen, umhergehen. User writes German sentences for review/correction.
+§
+German learning preferences: For verbs, always include past tense (Perfekt + Präteritum). For nouns, always include plural form. User is Mojtaba, learning German at A2 level, wants audio via gTTS (not edge TTS).
+§
+German learning preferences: Always include past tense (Perfekt + Präteritum) for verbs. Always include plural form for nouns. Use gTTS for audio (not edge TTS). All explanations in Persian. User is at A2 level, uses AnkiDroid.

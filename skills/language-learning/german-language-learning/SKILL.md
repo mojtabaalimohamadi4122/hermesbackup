@@ -329,6 +329,65 @@ When user asks about a reflexive verb like `sich vorstellen`, provide:
 - **Reflexive with Akkusativ** (no preposition): *sich vorstellen* (introduce oneself)
 - **Reflexive with Dativ** (with preposition like "etwas"): *sich etwas vorstellen* (imagine something) — note the pronoun changes to **mir/dir**!
 
+## The Dual Form of "hängen" (Transitive vs Intransitive)
+
+**hängen** has TWO different conjugation patterns depending on whether it's transitive or intransitive. This is a major trap for A2 learners!
+
+| Type | Meaning | Partizip II | Perfekt helper | Präteritum |
+|------|---------|-------------|----------------|------------|
+| **intransitive** (no object) | to hang (be suspended) | gehangen | **sein** | hing |
+| **transitive** (with object) | to hang (something) | gehangen | **haben** | hängte |
+
+### Examples:
+- **Das Bild hängt an der Wand.** (The picture hangs on the wall.) — intransitive
+- **Ich hänge das Bild auf.** (I hang the picture up.) — transitive
+- **Das Bild hat gehangen.** (The picture has been hanging.) — sein!
+- **Ich habe das Bild gehangen.** (I have hung the picture.) — haben!
+- **Das Bild hing an der Wand.** (The picture was hanging.) — Präteritum: hing
+- **Ich hängte das Bild auf.** (I hung the picture up.) — Präteritum: hängte
+
+### Pitfall:
+The Partizip II is the SAME for both (gehangen), but the Perfekt helper verb and Präteritum form are DIFFERENT. Always check if there's a direct object to determine which pattern to use.
+
+### Medical context:
+- **Die Infusion hängt am Tropf.** (The IV drip is hanging.) — intransitive, sein
+- **Bitte hängen Sie den Tropf auf.** (Please hang up the drip.) — transitive, haben
+
+## "In Kontakt bleiben" Pattern (Staying in Contact)
+
+This is a very common phrase using **bleiben** (to stay/remain) + prepositional phrase.
+
+### Key forms:
+| Time | Form | Example |
+|------|------|---------|
+| Präsens | ich bleibe | Ich **bleibe** in Kontakt. |
+| Perfekt | ich bin geblieben | Ich **bin** in Kontakt **geblieben**. |
+| Präteritum | ich blieb | Ich **blieb** in Kontakt. |
+
+**Note:** bleiben uses **sein** in Perfekt (change of state/location).
+
+### Common phrase patterns with bleiben:
+- **in Kontakt bleiben** — to stay in touch
+- **in Berührung bleiben** — to stay in contact
+- **am Ball bleiben** — to stay on track (idiom)
+- **sitzen bleiben** — to fail a class (school)
+
+## Inversion Pattern (Sentence Starts with Prepositional Phrase)
+
+When a sentence begins with a prepositional phrase (adverb of place/time), the verb and subject swap positions:
+
+**Normal:** Das Bild **hängt** an der Wand. (Subject + Verb)
+**Inversion:** An der Wand **hängt** das Bild. (Prepositional phrase + Verb + Subject)
+
+### Common patterns:
+- **An der Wand hängt das Bild.** (On the wall hangs the picture.)
+- **Auf dem Tisch steht die Vase.** (On the table stands the vase.)
+- **Im Zimmer liegt der Hund.** (In the room lies the dog.)
+- **Am Fenster sitzt die Katze.** (At the window sits the cat.)
+
+### Why this matters:
+This pattern is EXTREMELY common in German and appears in A2/B1 exams. The rule is simple: if a prepositional phrase starts the sentence, the verb takes position #2 and the subject moves after it.
+
 ## Verbs with "umher-" Prefix
 
 The prefix **umher-** means "around" and creates separable verbs:

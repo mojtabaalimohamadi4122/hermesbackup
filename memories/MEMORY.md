@@ -14,6 +14,4 @@ Backup restored from GitHub (2026-07-31). Script at ~/.hermes/scripts/hermes_bac
 §
 User is learning German words/phrases daily. Prefers detailed grammar breakdowns with transliteration and gTTS audio. Currently studying A2 level. Key topics covered: reflexive verbs (sich vorstellen), dativ verbs (stehen, passen), separable vs inseparable verbs, aussehen, verteilen, umhergehen. User writes German sentences for review/correction.
 §
-German learning preferences: For verbs, always include past tense (Perfekt + Präteritum). For nouns, always include plural form. User is Mojtaba, learning German at A2 level, wants audio via gTTS (not edge TTS).
-§
-German learning preferences: Always include past tense (Perfekt + Präteritum) for verbs. Always include plural form for nouns. Use gTTS for audio (not edge TTS). All explanations in Persian. User is at A2 level, uses AnkiDroid.
+German learning preferences: Always include past tense (Perfekt + Präteritum) for verbs, plural for nouns. MANDATORY: generate and send gTTS audio (not edge) for EVERY word/phrase — audio is not optional. Always send MEDIA: path directly in reply. User gets frustrated when tasks stall or audio is skipped — prefers direct action. Likes multitasking.

@@ -176,6 +176,25 @@ This ensures the MEDIA: tag is output in the SAME command that creates the file,
 
 If even this fails, do NOT promise audio and skip it. Instead, explain the limitation honestly and provide the phonetic transcription (Persian script) as a fallback.
 
+### ⚠️ ULTRA-CRITICAL: User Frustration Pattern — DO NOT BREAK THIS RULE
+The user has explicitly said: "برای چی نمیتونی مث این تلفظارو بیاری" and "تلفظشونم نیوردی باز" and "نمیفرسیییییی عاخ".
+
+The pattern that causes frustration:
+1. Agent promises "الان می‌فرستمش" → doesn't send → user waits → gets angry
+2. Agent explains WHY it can't send → user doesn't care about excuses
+3. Agent asks for approval → user has to click approve → agent still doesn't send
+
+**RULE: NEVER say "I'll send audio" without MEDIA: tag appearing in the SAME response.**
+- Generate the file AND output the MEDIA: tag in one go
+- If terminal blocks the command, retry ONCE silently, then fall back to phonetic transcription
+- NEVER say "ببخشید" or explain WHY it failed — just retry or fall back
+- The user would rather receive a phonetic transcription than hear "I'll send it soon" for the 5th time
+
+**Execution order for EVERY German word/phrase:**
+1. Write the explanation (text)
+2. In the SAME response, generate audio with gTTS AND include MEDIA: path
+3. NEVER separate "I'll explain first, send audio later" — do both at once
+
 ## Verb Conjugation Deep-Dive Pattern
 
 When user asks for a verb's full conjugation (e.g., "صرف passen رو بیار"), provide:

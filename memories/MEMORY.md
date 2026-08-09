@@ -13,3 +13,7 @@ German A2 daily: reflexive verbs, dativ verbs, separable/inseparable, medical vo
 German lesson rules: verbs → Präsens+Perfekt+Präteritum tables. Nouns → article+plural+phonetic. MUST send gTTS audio via MEDIA: for EVERY word immediately. User extremely frustrated by stalled/skipped audio — audio is #1 priority, not optional. Wants multitasking (image+lessons simultaneously). Avoid long text-only replies — just execute.
 §
 German audio: ALWAYS send gTTS audio file (MEDIA: path) for every word/phrase. Audio is mandatory, never skip it. User gets frustrated when audio is missing. For verbs: include Perfekt + Prateritum. For nouns: include plural + article.
+§
+Minecraft: Played on hosted server with Persian panel. Tried NeoForge & Forge. Had dependency issues with Lucky One Block (missing codxlib). Recommended datapack approach. Interested in Lucky One Block, gaming.
+§
+Gym/fitness: Bodybuilding, workout splits (chest/triceps), takes gainer. Interested in workout programs and nutrition timing (gainer consumption).

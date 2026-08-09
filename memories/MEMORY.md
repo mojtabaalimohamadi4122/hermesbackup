@@ -11,3 +11,5 @@ German tutoring prefs: gTTS audio (not edge — too robotic). Format: word → p
 German A2 daily: reflexive verbs, dativ verbs, separable/inseparable, medical vocab (Schicht, Patient, Infusion). User writes sentences for correction.
 §
 German lesson rules: verbs → Präsens+Perfekt+Präteritum tables. Nouns → article+plural+phonetic. MUST send gTTS audio via MEDIA: for EVERY word immediately. User extremely frustrated by stalled/skipped audio — audio is #1 priority, not optional. Wants multitasking (image+lessons simultaneously). Avoid long text-only replies — just execute.
+§
+German audio: ALWAYS send gTTS audio file (MEDIA: path) for every word/phrase. Audio is mandatory, never skip it. User gets frustrated when audio is missing. For verbs: include Perfekt + Prateritum. For nouns: include plural + article.

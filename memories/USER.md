@@ -5,3 +5,5 @@ User sends voice messages for German pronunciation practice and wants feedback/e
 User prefers multitasking during study sessions: wants to continue German practice while other tasks (like image editing, research) process in the background. Don't block one task waiting for another.
 §
 User gets frustrated when tasks stall due to approval flags on terminal commands. Prefers direct action over explanations of why something failed. If a tool call fails, try alternative approaches silently instead of explaining the failure repeatedly.
+§
+Minecraft server: NeoForge 1.21.10. Wants to install Lucky One Block mod/datapack. Interested in gaming and Minecraft.

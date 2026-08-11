@@ -2,9 +2,7 @@ Name: Mojtaba. Associate degree in Emergency Medical Services. Learning German A
 §
 User Profile: Trading EUR/USD. Uses Hiddify/VPN (Turkey). Infrastructure: Railway 9router, memohermes primary model.
 §
-Coffee: Has Western 8860 espresso machine (51mm portafilter), manual grinder, pressurized portafilter. Wants better crema. Learning espresso technique. Interested in non-pressurized portafilter upgrade.
-§
-Uses Hiddify/VPN (WireGuard) for internet access.
+Coffee: Western 8860 espresso machine, 51mm portafilter, manual grinder. Interested in non-pressurized portafilter upgrade.
 §
 German tutoring prefs: gTTS audio (not edge — too robotic). Format: word → phonetic → meaning → grammar table → examples → gTTS audio → AnkiDroid tip. A2 level for Pflege Ausbildung migration.
 §
@@ -14,6 +12,10 @@ German lesson rules: verbs → Präsens+Perfekt+Präteritum tables. Nouns → ar
 §
 German audio: ALWAYS send gTTS audio file (MEDIA: path) for every word/phrase. Audio is mandatory, never skip it. User gets frustrated when audio is missing. For verbs: include Perfekt + Prateritum. For nouns: include plural + article.
 §
-Minecraft: Played on hosted server with Persian panel. Tried NeoForge & Forge. Had dependency issues with Lucky One Block (missing codxlib). Recommended datapack approach. Interested in Lucky One Block, gaming.
+Minecraft: NeoForge 1.20.1 server. Plays Lucky One Block. Had dependency issues (codxlib). Interested in gaming.
 §
 Gym/fitness: Bodybuilding, workout splits (chest/triceps), takes gainer. Interested in workout programs and nutrition timing (gainer consumption).
+§
+gTTS module sometimes gets lost and needs `pip install gTTS -q` before generating audio. Always install first to be safe.
+§
+German adjective rule: ALWAYS provide Positiv + Komparativ + Superlativ with example sentences for each. Send gTTS audio.

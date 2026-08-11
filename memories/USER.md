@@ -7,3 +7,5 @@ User prefers multitasking during study sessions: wants to continue German practi
 User gets frustrated when tasks stall due to approval flags on terminal commands. Prefers direct action over explanations of why something failed. If a tool call fails, try alternative approaches silently instead of explaining the failure repeatedly.
 §
 Minecraft server: NeoForge 1.21.10. Wants to install Lucky One Block mod/datapack. Interested in gaming and Minecraft.
+§
+Minecraft server: NeoForge/Forge, playing Lucky One Block mod. Struggled with mod dependencies (CodXLib, Fabric API). Eventually got it working with Forge 1.20.1.

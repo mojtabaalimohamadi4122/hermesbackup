@@ -22,18 +22,18 @@
       "schedule_display": "every 720m",
       "repeat": {
         "times": null,
-        "completed": 40
+        "completed": 41
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-26T11:26:02.863912+00:00",
-      "next_run_at": "2026-08-16T03:54:43.606665+00:00",
-      "last_run_at": "2026-08-15T03:53:49.842701+00:00",
+      "next_run_at": "2026-08-16T15:55:36.898180+00:00",
+      "last_run_at": "2026-08-15T15:54:47.411878+00:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
+      "last_delivery_error": "live adapter send failed: Forbidden: bot was blocked by the user; live adapter delivery to telegram:792418415 failed: Forbidden: bot was blocked by the user; delivery error: Telegram send failed: Forbidden: bot was blocked by the user",
       "deliver": "origin",
       "origin": {
         "platform": "telegram",
@@ -93,5 +93,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-08-15T15:54:43.607025+00:00"
+  "updated_at": "2026-08-16T03:55:36.898952+00:00"
 }

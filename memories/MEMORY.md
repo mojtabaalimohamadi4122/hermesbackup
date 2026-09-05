@@ -6,7 +6,7 @@ Coffee: Western 8860 espresso machine, 51mm portafilter, manual grinder. Interes
 §
 German tutoring prefs: gTTS audio (not edge — too robotic). Format: word → phonetic → meaning → grammar table → examples → gTTS audio → AnkiDroid tip. A2 level for Pflege Ausbildung migration.
 §
-German A2 daily: reflexive verbs, dativ verbs, separable/inseparable, medical vocab (Schicht, Patient, Infusion). User writes sentences for correction.
+German lesson examples MUST all come from Pflege/nursing work (Patient, Schicht, Wunddokumentation, Pflegebericht, Aufnahme). User writes own sentences for correction.
 §
 German lesson rules: verbs → Präsens+Perfekt+Präteritum tables. Nouns → article+plural+phonetic. MUST send gTTS audio via MEDIA: for EVERY word immediately. User extremely frustrated by stalled/skipped audio — audio is #1 priority, not optional. Wants multitasking (image+lessons simultaneously). Avoid long text-only replies — just execute.
 §

@@ -29,7 +29,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-26T11:26:02.863912+00:00",
-      "next_run_at": "2026-09-05T03:00:47.608838+00:00",
+      "next_run_at": "2026-09-05T15:01:09.047835+00:00",
       "last_run_at": "2026-09-04T15:00:47.608838+00:00",
       "last_status": "error",
       "last_error": "Script not found: /data/.hermes/scripts/hermes_backup.sh",
@@ -44,12 +44,15 @@
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "fire_claim": null,
+      "fire_claim": {
+        "at": "2026-09-05T03:01:09.054936+00:00",
+        "by": "411af2cc5b69:2:bb5854034e2e408eb42c19e93bfabf10"
+      },
       "last_dispatch": {
-        "scheduled_at": "2026-08-29T04:13:55.524542+00:00",
-        "dispatched_at": "2026-09-04T15:00:47.348148+00:00",
-        "lateness_seconds": 557211.8,
-        "kind": "catch_up"
+        "scheduled_at": "2026-09-05T03:00:47.608838+00:00",
+        "dispatched_at": "2026-09-05T03:01:09.021555+00:00",
+        "lateness_seconds": 21.4,
+        "kind": "on_time"
       },
       "failure_streak": 1
     },
@@ -100,5 +103,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-09-04T15:00:47.609300+00:00"
+  "updated_at": "2026-09-05T03:01:09.055208+00:00"
 }

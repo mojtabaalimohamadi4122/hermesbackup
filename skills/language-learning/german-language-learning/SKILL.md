@@ -158,6 +158,18 @@ This user:
 4. **gTTS audio pronunciation — MANDATORY, NOT OPTIONAL**
 5. AnkiDroid tip (medical context when possible)
 
+### ⚠️ MANDATORY: All Example Sentences Must Be Pflege/Nursing Context
+
+**User explicitly requested (this session):** "یادت باشه مثال‌هایی که در محیط پرستاری کار انجام میشه رو با کلمات بیار" — ALL example sentences for EVERY word/verb/noun lookup MUST come from the hospital/nursing workplace (*Pflegealltag*), NOT generic daily-life scenarios (shopping, weather, family).
+
+**Hard rule:**
+- For every word, the 3+ example sentences must depict real nurse/patient/work situations: Wunddokumentation, Medikamentengabe, Schichtübergabe, Patientenakte, Ernährungsplan, etc.
+- Generic examples like *"Ich gehe in den Park"* / *"Die Katze sitzt am Fenster"* are NOT acceptable anymore.
+- Even for food/abstract words, frame the example in a clinical context (e.g. *مرغ سوخاری* → *Für die weiche Kost geben wir dem Patienten gebratenes Hähnchen ohne Haut*).
+- Medical context section below is the reference vocabulary pool — reuse those patterns.
+
+Violating this rule = repeating a correction the user already gave once. Embed it by default.
+
 ### ⚠️ CRITICAL: Audio Generation Rules
 - **NEVER say "I'll send the audio" without actually sending it** — user gets extremely frustrated
 - Generate the audio with gTTS AND send `MEDIA:/path/to/file.mp3` in the SAME response

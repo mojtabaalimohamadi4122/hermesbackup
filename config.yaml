@@ -18,7 +18,6 @@ delegation:
   model: memohermes
   provider: openai-api
 command_allowlist:
-  - execute_code
   - script execution via -e/-c flag
 onboarding:
   seen:

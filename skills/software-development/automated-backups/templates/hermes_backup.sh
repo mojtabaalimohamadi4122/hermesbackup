@@ -5,7 +5,7 @@
 #
 # Setup:
 #   1. Copy this template to ~/.hermes/scripts/hermes_backup.sh
-#   2. Replace USER, TOKEN, and REPO_URL with your values
+#   2. Replace USER, TOKEN, and REPO_NAME with your values
 #   3. chmod +x ~/.hermes/scripts/hermes_backup.sh
 #   4. Test: bash ~/.hermes/scripts/hermes_backup.sh
 #   5. Schedule: cronjob create --schedule "every 12h" --script hermes_backup.sh --no_agent
@@ -16,18 +16,19 @@ HERMES_DIR="$HOME/.hermes"
 BACKUP_DIR="$HERMES_DIR/backup_tmp"
 USER="YOUR_GITHUB_USERNAME"
 TOKEN="YOUR_GITHUB_TOKEN"
-REPO_URL="https://github.com/$USER/REPO_NAME.git"
+REPO_NAME="YOUR_REPO_NAME"
+REPO_URL="https://github.com/$USER/$REPO_NAME.git"
 DATE=$(date '+%Y-%m-%d %H:%M')
 
 echo "=== Hermes Backup Started: $DATE ==="
 
-# Ensure git identity is set (pitfall #6)
+# Ensure git identity is set
 if ! git config --global user.email >/dev/null 2>&1; then
     git config --global user.email "bot@users.noreply.github.com"
     git config --global user.name "Backup Bot"
 fi
 
-# Always start from a safe directory (pitfall #4)
+# Always start from a safe directory
 cd /data
 
 # Clean previous temp backup
@@ -37,20 +38,20 @@ cd "$BACKUP_DIR"
 
 # Clone or update repo
 if [ -d ".git" ]; then
-    git remote set-url origin "https://${USER}:${TOKEN}@github.com/${USER}/REPO_NAME.git"
+    git remote set-url origin "https://${USER}:${TOKEN}@github.com/${USER}/${REPO_NAME}.git"
     git pull --rebase origin main 2>/dev/null || git pull --rebase origin master 2>/dev/null || true
 else
-    git clone "https://${USER}:${TOKEN}@github.com/${USER}/REPO_NAME.git" . 2>/dev/null || {
+    git clone "https://${USER}:${TOKEN}@github.com/${USER}/${REPO_NAME}.git" . 2>/dev/null || {
         echo "Creating new repo..."
         git init
-        git remote add origin "https://${USER}:${TOKEN}@github.com/${USER}/REPO_NAME.git"
+        git remote add origin "https://${USER}:${TOKEN}@github.com/${USER}/${REPO_NAME}.git"
         git checkout -b main
     }
 fi
 
 git checkout main 2>/dev/null || git checkout master 2>/dev/null || git checkout -b main 2>/dev/null
 
-# CRITICAL: Reset remote URL before commit (pitfall #2 — token leaking)
+# CRITICAL: Reset remote URL before commit (token leaking prevention)
 git remote set-url origin "$REPO_URL"
 
 # Clean old files (except .git)
@@ -72,7 +73,7 @@ rsync -a --exclude='*.db' --exclude='*.lock' --exclude='__pycache__' --exclude='
 mkdir -p cron
 cp -r "$HERMES_DIR/cron/"* cron/ 2>/dev/null || true
 
-# State (skip binary DBs — may contain tokens, pitfall #1)
+# State (skip binary DBs — may contain tokens)
 mkdir -p state
 cp "$HERMES_DIR/state/gateway.heartbeat" state/ 2>/dev/null || true
 
@@ -99,14 +100,14 @@ if git diff --cached --quiet; then
 else
     git commit -m "Backup: $DATE"
     # Temporarily set auth URL for push only
-    git remote set-url origin "https://${USER}:${TOKEN}@github.com/${USER}/REPO_NAME.git"
+    git remote set-url origin "https://${USER}:${TOKEN}@github.com/${USER}/${REPO_NAME}.git"
     git push origin main 2>/dev/null || git push origin master 2>/dev/null
     # Immediately reset URL after push
     git remote set-url origin "$REPO_URL"
     echo "Backup pushed successfully!"
 fi
 
-# Cleanup — cd out first (pitfall #4)
+# Cleanup — cd out first
 cd /data
 rm -rf "$BACKUP_DIR"
 

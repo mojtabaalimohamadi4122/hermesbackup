@@ -1,101 +1,133 @@
 ---
 name: automated-backups
-description: "Scheduled backup to GitHub — token safety and cron."
-version: 1.1.0
+description: "Set up and restore Hermes Agent backups to GitHub."
+version: 0.1.0
 author: Hermes Agent
 license: MIT
-tags: [backup, github, cron, automation, secret-scanning]
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [backup, github, restore, cron]
+    related_skills: [financial-monitoring, github-auth]
 ---
 
-# Automated Data Backups
+# Hermes Backup & Restore
 
-Patterns for backing up sensitive data (Hermes memory, configs, skills) to remote Git repositories on a schedule. Covers token safety, secret scanning, and cron integration.
+Automate daily backups of Hermes configuration, skills, memories, and cron jobs to a private GitHub repository, and restore them when needed.
 
 ## When to Use
 
-- User asks to back up Hermes data, memories, skills, or configs to GitHub/GitLab
-- User wants automated scheduled backups
-- User needs to push binary files that may contain secrets
+- User asks to set up automated backups for Hermes Agent
+- User needs to restore Hermes from a previous backup
+- User wants to verify backup integrity or test backup scripts
 
-## Key Pitfalls
+## Prerequisites
 
-### 1. GitHub Secret Scanning Blocks Token-Leaked Pushes
+- GitHub personal access token with `repo` scope
+- `git` installed and configured
+- Access to `~/.hermes` directory
 
-GitHub's Push Protection scans for PATs in commits — including inside binary files like SQLite databases. If `state.db` records a git operation with an embedded token, the push will be rejected with `GH013`.
+## Procedure
 
-**Fix:** Exclude `.db` files and other binaries that may contain tokens. See `references/secret-scanning.md` for details.
+### 1. Create Backup Script
 
-### 2. Token in Remote URL Leaks to Git Config
+Create `~/.hermes/scripts/hermes_backup.sh` from the template in `templates/hermes_backup.sh`.
 
-When cloning with `https://TOKEN@github.com/...`, the token persists in `.git/config`. Always reset the remote URL after push:
+Fill in:
+- `USER` = GitHub username
+- `TOKEN` = personal access token (classic)
+- `REPO_URL` = `https://github.com/<USER>/<repo>.git`
+
+Make executable: `chmod +x ~/.hermes/scripts/hermes_backup.sh`
+
+### 2. Schedule Backup Job
+
 ```bash
-git remote set-url origin https://github.com/user/repo.git
+cronjob(action='create', schedule='every 720m', script='hermes_backup.sh', deliver='origin', no_agent=True)
 ```
 
-### 3. Port 22 Closed → HTTPS-Only with Token Auth
+This runs every 12 hours and pushes changes to the repo.
 
-Many cloud environments block outbound SSH (port 22). Use HTTPS with an embedded token:
+### 3. Test Backup
+
+Run the script manually to verify it works:
 ```bash
-git clone "https://USER:${TOKEN}@github.com/user/repo.git"
+bash ~/.hermes/scripts/hermes_backup.sh
 ```
-**Critical:** Set the auth URL only for clone/push, then reset to the clean URL immediately after:
+
+Check that the commit appears on GitHub.
+
+### 4. Restore from Backup
+
+To restore a backup from GitHub:
+
 ```bash
-# Before push
-git remote set-url origin "https://USER:${TOKEN}@github.com/user/repo.git"
-git push origin main
-# After push — always clean up
-git remote set-url origin https://github.com/user/repo.git
+cd /data
+git clone https://<TOKEN>@github.com/<USER>/<repo>.git hermesbackup
+cd hermesbackup
+
+# Restore memories
+cp memories/*.md ~/.hermes/memories/
+
+# Restore skills (recursively!)
+for d in skills/*/; do
+  cp -r "$d" ~/.hermes/skills/
+done
+
+# Restore cron jobs
+cp -r cron/* ~/.hermes/cron/
+
+# Restore config (merge, don't overwrite if you want to keep current model)
+cp SOUL.md ~/.hermes/
+cp channel_directory.json ~/.hermes/
+
+# Restore backup script
+cp scripts/hermes_backup.sh ~/.hermes/scripts/
+chmod +x ~/.hermes/scripts/hermes_backup.sh
+
+# Clean up
+rm -rf /data/hermesbackup
 ```
 
-### 4. `cd` into a Directory You Just Deleted
+**⚠️ CRITICAL: Always restore skills RECURSIVELY.**
+The backup stores skills in a tree (e.g., `skills/software-development/automated-backups/`).
+Copying only top-level directories will miss nested skills.
 
-After `rm -rf "$BACKUP_DIR"`, if the shell's CWD was inside that directory, subsequent commands fail with "No such file or directory". Always `cd` to a safe path before removing:
-```bash
-cd /data  # or any known-good path
-rm -rf "$BACKUP_DIR"
-mkdir -p "$BACKUP_DIR"
-cd "$BACKUP_DIR"
-```
+### 5. Verify Restore
 
-### 5. What to Backup vs. Exclude
+After restore:
+- Check that `~/.hermes/memories/USER.md` and `MEMORY.md` exist
+- Verify `~/.hermes/skills/` contains all expected categories and skills
+- Run `bash ~/.hermes/scripts/hermes_backup.sh` to confirm backup script works
+- Check cron jobs: `cronjob(action='list')`
 
-| Include | Exclude |
-|---------|---------|
-| `memories/*.md` | `state.db`, `kanban.db` (may contain tokens) |
-| `skills/` (rsync, skip `__pycache__`) | `auth.json`, `gateway_state.json` |
-| `cron/` | `cache/`, `audio_cache/`, `image_cache/` |
-| `config.yaml`, `SOUL.md` | `logs/`, `bin/`, `*.lock` |
-| `hooks/` | `models_dev_cache.json`, `provider_models_cache.json` |
+## Pitfalls
 
-### 6. Git Author Identity Required Before First Commit
+1. **Never backup SQLite databases (state.db, kanban.db)** — they may contain tokens in binary data that trigger GitHub push protection (GH013).
 
-Fresh containers or root-owned environments have no git identity configured. The first `git commit` fails with `Author identity unknown` / `fatal: unable to auto-detect email address`. Set this **before** the first backup run:
-```bash
-git config --global user.email "bot@users.noreply.github.com"
-git config --global user.name "Backup Bot"
-```
-Include this check at the top of backup scripts for robustness.
+2. **Use temporary auth URL only for push** — set token URL before push, reset to clean URL after:
+   ```bash
+   git remote set-url origin "https://user:${TOKEN}@github.com/..."
+   git push origin main
+   git remote set-url origin "https://github.com/user/repo.git"
+   ```
 
-## Backup Script Template
+3. **Skills must be restored recursively** — the backup tree mirrors `~/.hermes/skills/` structure. A shallow copy misses nested skills like `software-development/automated-backups/`.
 
-See `templates/hermes_backup.sh` for a complete, production-ready backup script that:
-- Clones/updates the remote repo via HTTPS (port 22 safe)
-- Backs up memories, skills, cron, config, hooks
-- Excludes binary DBs and sensitive files
-- Commits and pushes with token auth
-- Cleans up temp directory after each run
-- Resets remote URL to avoid token leaking in `.git/config`
+4. **When restoring config.yaml, decide on model** — the backup may have a different default model. Either merge carefully or keep the current config and only add missing sections (aliases, delegation).
 
-## Hermes Cron Integration
+5. **Cron jobs store execution history** — restoring `cron/jobs.json` will overwrite current job states. If you only want the jobs without history, edit the file to clear `last_run_at`, `last_status`, etc.
 
-For simple script-only backups (no LLM needed):
-```
-cronjob create --schedule "every 12h" --script backup.sh --no_agent
-```
-- `no_agent=True` skips the LLM — script runs directly
-- Empty stdout = silent (no notification sent)
-- Non-zero exit = error alert sent
+6. **Token security** — see `references/backup-token-security.md` for detailed token leak prevention.
+
+## Verification
+
+- Backup script runs without error
+- Commit appears on GitHub with updated timestamp
+- Restore process copies all files without missing nested skills
+- Cron job appears in `cronjob(action='list')` and runs on schedule
 
 ## References
 
-- `references/secret-scanning.md` — GitHub secret scanning details and unblock workflow
+- `trading/financial-monitoring/references/backup-token-security.md` — Token leak prevention
+- `templates/hermes_backup.sh` — Backup script template

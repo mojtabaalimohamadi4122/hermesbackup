@@ -1,4 +1,4 @@
-German audio: edge-tts voice='de-DE-KatjaNeural' ONLY (user confirmed perfect; default text_to_speech tool sounds English, don't use). Phonetic transcription [brackets] in text alongside audio. All German audio via python edge_tts package with this exact voice string.
+Mojtaba (M.A.M), Sadeghiyeh Tehran. EMS diploma (NOT BSN), planning Pflege Ausbildung Germany. German A2, AnkiDroid. Persian responses. Shares PATs - warn don't block. Two Hermes instances share repo github.com/mojtabaalimohamadi4122/hermesbackup; script MUST overlay files, NEVER wipe repo (prevents push/delete conflict). Bodybuilding (gainer, superset workouts).
 §
 User sends voice messages for German pronunciation practice and wants feedback/evaluation on his accent (correctness scoring, tips on specific sounds like "ch" and "st").
 §

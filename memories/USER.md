@@ -1,23 +1,7 @@
-Mojtaba (M.A.M), Sadeghiyeh Tehran. EMS diploma (NOT BSN), planning Pflege Ausbildung Germany. German A2, AnkiDroid. Persian responses. Shares PATs - warn don't block. Two Hermes instances share repo github.com/mojtabaalimohamadi4122/hermesbackup; script MUST overlay files, NEVER wipe repo (prevents push/delete conflict). Bodybuilding (gainer, superset workouts).
+مجتبی (M.A.M): کاردانی فوریت پزشکی، نقشه Pflege Ausbildung آلمان، آلمانی A2 (AnkiDroid). همیشه فارسی. درس آلمانی: مثال‌ها حتماً از محیط پرستاری/بیمارستان (Pflegealltag) باشن. برای هر کلمه حتماً صوت gTTS (MEDIA:) بفرست — اولویت اول، حتی در تکرار. کلمه→تلفظ→معنی→جدول دستوری→مثال‌ها→صوت. افعال: Präsens+Perfekt+Präteritum. اسم‌ها: آرتیکل+جمع. صفات: Positiv+Komparativ+Superlativ. توکن‌ها رو مستقیم می‌فرسته — هشدار بده ولی بلاک نکن.
 §
 User sends voice messages for German pronunciation practice and wants feedback/evaluation on his accent (correctness scoring, tips on specific sounds like "ch" and "st").
 §
-German lesson FULL TEMPLATE:
-
-[Word] (+ Dativ/Akk) [IPA] = Persian meaning (verb type + preposition)
-
-🇩🇪 Definition auf Deutsch
-
-📊 صرف فعل: Präsens / Perfekt / Präteritum - EACH with a Pflege example + Persian translation
-
-🏥 Pflegealltag sentences (numbered, German + Persian translation)
-
-🌍 Ordinary/general examples (German + Persian translation)
-
-💡 Notes: related nouns, contrasts with similar verbs, practical usage
-
-Audio: edge-tts voice='de-DE-KatjaNeural' ONLY (via python edge_tts). Audio ONLY for: WORD + Pflegealltag sentences.
+User prefers multitasking during study sessions: wants to continue German practice while other tasks (like image editing, research) process in the background. Don't block one task waiting for another.
 §
-On tool failures: silently try alternatives, don't repeatedly explain failures.
-§
-Minecraft: NeoForge 1.20.1, Lucky One Block mod (fixed Forge deps before). Gamer. Also plays Onimusha Way of the Sword (cracked/EMPRESS).
+User gets frustrated when tasks stall due to approval flags on terminal commands. Prefers direct action over explanations of why something failed. If a tool call fails, try alternative approaches silently instead of explaining the failure repeatedly.

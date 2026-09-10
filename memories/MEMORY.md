@@ -12,4 +12,4 @@ Minecraft: NeoForge 1.20.1 server. Plays Lucky One Block. Had dependency issues 
 §
 Gym/fitness: Bodybuilding, workout splits (chest/triceps), takes gainer. Interested in workout programs and nutrition timing (gainer consumption).
 §
-Backup infra: repo github.com/mojtabaalimohamadi4122/hermesbackup (classic PAT inside script). Script ~/.hermes/scripts/hermes_backup.sh; cron job 'Hermes Backup to GitHub' every 720m no_agent. If cron errors 'Script not found', recreate script from skills/software-development/automated-backups/templates/hermes_backup.sh with real USER/TOKEN/REPO filled in. Full restore = skills→~/.hermes/skills, memories/*.md→~/.hermes/memories, SOUL.md+channel_directory.json+config.yaml→~/.hermes/.
+Backup infra: repo github.com/mojtabaalimohamadi4122/hermesbackup. Script ~/.hermes/scripts/hermes_backup.sh. Cron 'Hermes Backup to GitHub' every 720m. IMPORTANT: Another Hermes also pushes to this repo. Script always clones/pulls remote first so OTHER Hermes data is NEVER deleted or overwritten (only add/update).

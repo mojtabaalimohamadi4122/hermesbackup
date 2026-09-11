@@ -1,0 +1,32 @@
+{
+  "github": {
+    "archived_at": null,
+    "created_at": "2026-09-11T19:28:38.291273+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_reused_patch_generation": 0,
+    "last_used_at": "2026-09-11T19:28:38.302924+00:00",
+    "last_viewed_at": "2026-09-11T19:28:38.291308+00:00",
+    "patch_count": 0,
+    "patch_generation": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
+  "hermes-agent": {
+    "archived_at": null,
+    "created_at": "2026-09-11T19:28:38.296225+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_reused_patch_generation": 0,
+    "last_used_at": "2026-09-11T19:28:38.307237+00:00",
+    "last_viewed_at": "2026-09-11T19:28:38.296261+00:00",
+    "patch_count": 0,
+    "patch_generation": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  }
+}

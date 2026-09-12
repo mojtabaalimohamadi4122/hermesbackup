@@ -72,10 +72,11 @@ display:
   streaming: true
   skin: default
   interim_assistant_messages: true
-  tool_progress: all
-  cleanup_progress: false
+  tool_progress: false
+  cleanup_progress: true
   long_running_notifications: true
   busy_ack_detail: true
+  tool_progress_command: false
 stt:
   enabled: true
   language: en

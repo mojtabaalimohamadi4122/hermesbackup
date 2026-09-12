@@ -1,4 +1,11 @@
-مجتبی (M.A.M): کاردانی فوریت پزشکی، نقشه Pflege Ausbildung آلمان، آلمانی A2 (AnkiDroid). همیشه فارسی. درس آلمانی: مثال‌ها حتماً از محیط پرستاری/بیمارستان (Pflegealltag) باشن. صوت فقط برای مثال‌های پرستاری (Pflegealltag) — کلمه‌ی تنها و جدول‌ها صوت لازم ندارن (قانون جدید، 2026-09-11). کلمه→تلفظ→معنی→جدول دستوری→مثال‌ها→صوت. افعال: Präsens+Perfekt+Präteritum. اسم‌ها: آرتیکل+جمع. صفات: Positiv+Komparativ+Superlativ. توکن‌ها رو مستقیم می‌فرسته — هشدار بده ولی بلاک نکن.
+مجتبی (M.A.M): کاردانی فوریت پزشکی، نقشه Pflege Ausbildung آلمان، آلمانی A2 (AnkiDroid). همیشه فارسی. درس آلمانی: مثال‌ها حتماً از محیط پرستاری/بیمارستان (Pflegealltag) باشن. صوت فقط برای مثال‌های پرستاری (Pflegealltag) — کلمه‌ی تنها و جدول‌ها صوت لازم ندارن (قانون جدید، 2026-09-11). قالب جدید درس آلمانی (اجباری):
+1. کلمه/اسم/فعل + phonetics + معنی
+2. Definition auf Deutsch (تعریف آلمانی)
+3. بررسی اسم/صفت/مشتقات
+4. جدول صرف فعل (Präsens, Perfekt, Präteritum) با مثال‌های بیمارستانی
+5. نمونه جمله‌های کاربردی در Pflegealltag (با صوت MEDIA:)
+6. نکته حرفه‌ای (Pflegeethik/Pflegealltag).
+صوت فقط برای جملات مثال (Pflegealltag) فرستاده شود. توکن‌ها رو مستقیم می‌فرسته — هشدار بده ولی بلاک نکن.
 §
 User sends voice messages for German pronunciation practice and wants feedback/evaluation on his accent (correctness scoring, tips on specific sounds like "ch" and "st").
 §

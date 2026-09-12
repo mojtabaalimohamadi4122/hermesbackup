@@ -22,17 +22,17 @@
       "schedule_display": "every 720m",
       "repeat": {
         "times": null,
-        "completed": 79
+        "completed": 80
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-26T11:26:02.863912+00:00",
-      "next_run_at": "2026-09-12T19:39:56.920113+00:00",
-      "last_run_at": "2026-09-11T19:39:20.713586+00:00",
-      "last_status": "error",
-      "last_error": "Script exited with code 1\nstderr:\n/root/.hermes/scripts/hermes_backup.sh: line 31: cd: /data: No such file or directory\nstdout:\n=== Hermes Backup Started: 2026-09-11 19:38 ===",
+      "next_run_at": "2026-09-13T07:41:50.389595+00:00",
+      "last_run_at": "2026-09-12T07:40:58.051097+00:00",
+      "last_status": "ok",
+      "last_error": null,
       "last_delivery_error": null,
       "deliver": "origin",
       "origin": {
@@ -45,16 +45,16 @@
       "enabled_toolsets": null,
       "workdir": null,
       "fire_claim": {
-        "at": "2026-09-12T07:39:58.567476+00:00",
-        "by": "me:22952:2c2cbe2e19cf4a4eba99e88bf2957259"
+        "at": "2026-09-12T19:41:51.781835+00:00",
+        "by": "me:22952:c7439ab656df4078b7d76f2ffbb7aff9"
       },
       "last_dispatch": {
-        "scheduled_at": "2026-09-12T07:39:20.713586+00:00",
-        "dispatched_at": "2026-09-12T07:39:56.575765+00:00",
-        "lateness_seconds": 35.9,
+        "scheduled_at": "2026-09-12T19:40:58.051097+00:00",
+        "dispatched_at": "2026-09-12T19:41:50.052643+00:00",
+        "lateness_seconds": 52.0,
         "kind": "on_time"
       },
-      "failure_streak": 1
+      "failure_streak": 0
     },
     {
       "id": "ea793b5096de",
@@ -103,5 +103,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-09-12T07:39:58.568104+00:00"
+  "updated_at": "2026-09-12T19:41:51.782451+00:00"
 }

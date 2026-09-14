@@ -133,6 +133,21 @@ This user:
 - Prefers gTTS audio over edge TTS (robotic-sounding)
 - Always wants **past tense for verbs** and **plural for nouns** in every word lookup
 
+## CANONICAL 6-Part Lesson Format (User-Specified)
+
+The user sent an explicit format and said to remember it ("یادت بمونه"). Use this EXACT 6-part structure for EVERY German word/verb/noun lookup. Do not deviate:
+
+1. **کلمه + تلفظ + معنی** — the word (with article for nouns), IPA-style phonetic in Persian, Persian meaning. Fix any typo in the user's input first (e.g. *Solz → stolz*, *Dre → Drei*).
+2. **Definition auf Deutsch** — a short German definition sentence (establishes the German-only immersion habit).
+3. **بررسی اسم/صفت/مشتقات** — related nouns, adjectives, compounds with gender + meaning.
+4. **جدول صرف فعل (Präsens, Perfekt, Präteritum)** — full conjugation table (all 6 persons) with ONE Pflegealltag example per tense. Note trennbar/untrennbar, haben/sein, umlaut changes.
+5. **نمونه جمله‌های کاربردی در Pflegealltag (با صوت MEDIA:)** — 3+ example sentences from nursing/hospital context, EACH with its own gTTS audio delivered as MEDIA:.
+6. **نکته حرفه‌ای (Pflegeethik/Pflegealltag)** — a professional/practical note tying the word to German nursing reality (Berufsethik, Pflegegrad, Kommunikation, etc.).
+
+**AUDIO SCOPING (CRITICAL — user correction):** Generate gTTS audio ONLY for the section-5 Pflegealltag example sentences. Do NOT generate audio for the isolated word (section 1), the definition (section 2), the derivatives (section 3), or the conjugation tables (section 4). This overrides the older "audio for every word" rule.
+
+**Workflow for audio:** create one folder per lesson — `/root/.hermes/audio_cache/<word>_lektion/` — and write one `b1.mp3, b2.mp3, b3.mp3 ...` file per example sentence, then emit all MEDIA: tags in the same response.
+
 ## MANDATORY Response Format for Every German Word
 
 **User has explicitly corrected the agent MULTIPLE TIMES when any of these were missing. Audio being skipped or delayed is the #1 frustration trigger. Do NOT promise audio and not deliver — generate and send it in the SAME response.**
@@ -155,7 +170,7 @@ This user:
 1. Word breakdown (etymology if helpful)
 2. Multiple meanings if applicable (table format)
 3. 3+ example sentences with Persian translation
-4. **gTTS audio pronunciation — MANDATORY, NOT OPTIONAL**
+### 4. **gTTS audio pronunciation** — for the section-5 Pflegealltag example sentences (audio is scoped to those only — see AUDIO SCOPING rule)
 5. AnkiDroid tip (medical context when possible)
 
 ### ⚠️ MANDATORY: All Example Sentences Must Be Pflege/Nursing Context
@@ -171,7 +186,8 @@ This user:
 Violating this rule = repeating a correction the user already gave once. Embed it by default.
 
 ### ⚠️ CRITICAL: Audio Generation Rules
-- **NEVER say "I'll send the audio" without actually sending it** — user gets extremely frustrated
+- Audio is generated ONLY for the section-5 Pflegealltag example sentences (see CANONICAL 6-Part Lesson Format above). The isolated word, the Definition auf Deutsch, derivatives, and conjugation tables do NOT get audio.
+- NEVER say "I'll send the audio" without actually sending it — user gets extremely frustrated
 - Generate the audio with gTTS AND send `MEDIA:/path/to/file.mp3` in the SAME response
 - If terminal approval blocks the command, retry immediately — do NOT stop and explain
 - The user has said: "تلفظشونم نیوردی باز" (you didn't send the pronunciation again) — this is a repeated frustration

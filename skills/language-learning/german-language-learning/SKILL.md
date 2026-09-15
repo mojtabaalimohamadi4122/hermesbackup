@@ -144,7 +144,7 @@ The user sent an explicit format and said to remember it ("یادت بمونه")
 5. **نمونه جمله‌های کاربردی در Pflegealltag (با صوت MEDIA:)** — 3+ example sentences from nursing/hospital context, EACH with its own gTTS audio delivered as MEDIA:.
 6. **نکته حرفه‌ای (Pflegeethik/Pflegealltag)** — a professional/practical note tying the word to German nursing reality (Berufsethik, Pflegegrad, Kommunikation, etc.).
 
-**AUDIO SCOPING (CRITICAL — user correction):** Generate gTTS audio ONLY for the section-5 Pflegealltag example sentences. Do NOT generate audio for the isolated word (section 1), the definition (section 2), the derivatives (section 3), or the conjugation tables (section 4). This overrides the older "audio for every word" rule.
+**AUDIO SCOPING — USER OVERRIDE (most recent, 2026-09-15):** The user explicitly said do NOT auto-generate ANY gTTS audio (MEDIA tags) to save tokens. Generate audio ONLY when the user explicitly asks for pronunciation (e.g. "تلفظش رو بیار"). When audio is requested, scope it to the section-5 Pflegealltag example sentences only. This overrides all older "audio is mandatory / never skip audio" rules. No audio = no MEDIA tag at all.
 
 **Workflow for audio:** create one folder per lesson — `/root/.hermes/audio_cache/<word>_lektion/` — and write one `b1.mp3, b2.mp3, b3.mp3 ...` file per example sentence, then emit all MEDIA: tags in the same response.
 

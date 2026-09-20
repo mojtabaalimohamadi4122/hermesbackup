@@ -15,3 +15,5 @@ Gym/fitness: Bodybuilding, workout splits (chest/triceps), takes gainer. Interes
 Backup infra: repo github.com/mojtabaalimohamadi4122/hermesbackup. Script ~/.hermes/scripts/hermes_backup.sh. Cron 'Hermes Backup to GitHub' every 720m. IMPORTANT: Another Hermes also pushes to this repo. Script always clones/pulls remote first so OTHER Hermes data is NEVER deleted or overwritten (only add/update).
 §
 German lessons: user wants everyday example sentences in addition to nursing context examples (requested explicitly).
+§
+User prefers that no audio or voice files be sent automatically; only provide audio if explicitly requested.

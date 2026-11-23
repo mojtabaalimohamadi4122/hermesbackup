@@ -17,3 +17,5 @@ Backup infra: repo github.com/mojtabaalimohamadi4122/hermesbackup. Script ~/.her
 German lessons: user wants everyday example sentences in addition to nursing context examples (requested explicitly).
 §
 User prefers that no audio or voice files be sent automatically; only provide audio if explicitly requested.
+§
+User requires ALL explanations and translations to be in Farsi. Explicitly corrected Hermes twice about this. German examples/vocab can stay in German but every explanation must be Farsi.

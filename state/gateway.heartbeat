@@ -1,1 +1,1 @@
-{"pid": 786, "updated_at": "2026-11-24T10:36:54.962663+00:00", "monotonic": 1298240.295162435, "start_time": 1794218406.908572, "mem": {"rss_kib": 300792, "mem_total_kib": 984548, "mem_available_kib": 168900, "swap_used_kib": 0}, "loop_tick_socket": true, "loop_tick_tcp_port": null}
+{"pid": 786, "updated_at": "2026-11-24T22:38:50.397187+00:00", "monotonic": 1341555.72967441, "start_time": 1794218406.908572, "mem": {"rss_kib": 298292, "mem_total_kib": 984548, "mem_available_kib": 160556, "swap_used_kib": 0}, "loop_tick_socket": true, "loop_tick_tcp_port": null}
